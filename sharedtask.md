@@ -133,19 +133,30 @@ We are particularly interested in finding the native speakers' segments. In the 
 
 <details>
     <summary>Data</summary>
-    <p><a href="https://files.deeppavlov.ai/field-matters/releases/demo/dia_data.csv">dia_data.csv</a> &mdash; the dataset for the Diarization track </br> 
+    <p><a href="https://files.deeppavlov.ai/field-matters/releases/demo/dia_data.csv">dia_data.csv</a> &mdash; the dataset for the Diarization track <br> 
     <a href="https://files.deeppavlov.ai/field-matters/releases/demo/sound.zip">sound.zip</a> &mdash; an archive containing the files referenced in both tracks </p>
 </details>
 <details >
     <summary>Baseline solution</summary>
-    <p></p>
+    <p><a href="https://raw.githubusercontent.com/field-matters/ST2022/main/diarization_baseline.ipynb">diarization_baseline.ipynb</a></p>
+</details>
 
 ## ASR
 You are expected to provide the transcription of a given recording of a under-resourced language speech. 
 
 We don't expect an  accurate transcription to be accomplished at this time. Linguistically and phonetically motivated errors receive fewer penalty than uninterpretable ones. That is, predicting /s/ instead of /z/ gets fewer penalty than predicting /s/ instead of /b/.
 We don't also pay attention to word boundaries detection. Therefore predictions "the cat sat on the mat" and "theca tsaton them at" are considered equal.
-
+  
+<details>
+    <summary>Data</summary>
+    <p><a href="https://files.deeppavlov.ai/field-matters/releases/demo/asr_data.csv">asr_data.csv</a> &mdash; the dataset for the ASR track <br> 
+    <a href="https://files.deeppavlov.ai/field-matters/releases/demo/sound.zip">sound.zip</a> &mdash; an archive containing the files referenced in both tracks </p>
+</details>
+<details >
+    <summary>Baseline solution</summary>
+    <p><a href="https://raw.githubusercontent.com/field-matters/ST2022/main/asr_baseline.ipynb">asr_baseline.ipynb</a></p>
+</details>
+  
 ## Important links
 + [Github repository](https://github.com/field-matters/ST2022)
 + [Registration](https://forms.gle/oZY7h1R71xzNDGEN8)
