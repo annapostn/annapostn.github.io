@@ -88,6 +88,15 @@ Before transcribing the speech, we want to identify who does speak and when. Unl
  
 We are particularly interested in finding the native speakers' segments. In the training data, only the target language is annotated as well as the overall number of speakers, and only this information gets taken into account in the automatic evaluation during the coding period. Evaluation of the held-out dataset where both under-resourced language and high-resourced language chunks are annotated will be held after the submission deadline.
 
+<details>
+    <summary>Data</summary>
+    [`dia_data.csv`](https://files.deeppavlov.ai/field-matters/releases/demo/dia_data.csv) &mdash; the dataset for the Diarization track </br>
+    [`sound.zip`](https://files.deeppavlov.ai/field-matters/releases/demo/sound.zip) &mdash; an archive containing the files referenced in both tracks
+</details>
+<details >
+    <summary>Baseline solution</summary>
+    <p></p>
+
 ## ASR
 You are expected to provide the transcription of a given recording of a under-resourced language speech. 
 
