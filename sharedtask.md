@@ -9,7 +9,52 @@
 <script src="https://unpkg.com/wavesurfer.js@6.1.0/dist/plugin/wavesurfer.regions.js"></script>
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <style> 
-    .frame{
+    summary::-webkit-details-marker{display:none;}
+    summary::-moz-list-bullet{list-style-type:none;}
+    summary::marker{display:none;} 
+    summary {
+         padding: .3em 1.5em .3em .6em;
+         display:inline-block;
+         font-size:1.4em;
+         cursor: pointer;
+         position: relative;
+            }
+     summary:before {
+         right: .3em;
+         top: .4em;
+         color: transparent;
+         background:                url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjM0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIzNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNOC41OSAxNi4zNGw0LjU4LTQuNTktNC41OC00LjU5TDEwIDUuNzVsNiA2LTYgNnoiLz48L3N2Zz4=") no-repeat 50% 50% / 1em 1em;
+         width: 1em;
+         height: 1em;  
+         content: "";
+         position: absolute;
+         transition: transform .5s;
+            }
+         details[open] > summary:before {
+                         transform: rotateZ(90deg);
+                                        }
+      summary ~ * {
+         padding:0 1em 0 1em;
+                   }
+      details[open] summary ~ *{ 
+         animation: sweep .5s ease-in-out;
+                                }
+      @keyframes sweep {
+          0%    {opacity: 0;}
+          100%  {opacity: 1;}
+                       }
+      summary:focus {
+        outline:0;
+        box-shadow: inset 0 0 1px rgba(0,0,0,0.3), inset 0 0 2px rgba(0,0,0,0.3);
+      }
+      details{
+       display:block;
+        margin-bottom: .5rem;
+      }
+      body{background: #edf2f7;}
+    
+    
+          .frame{
       width: max-content;
       margin: auto;
       height: 60px;
@@ -90,8 +135,8 @@ We are particularly interested in finding the native speakers' segments. In the 
 
 <details>
     <summary>Data</summary>
-    [`dia_data.csv`](https://files.deeppavlov.ai/field-matters/releases/demo/dia_data.csv) &mdash; the dataset for the Diarization track </br>
-    [`sound.zip`](https://files.deeppavlov.ai/field-matters/releases/demo/sound.zip) &mdash; an archive containing the files referenced in both tracks
+    <a href="https://files.deeppavlov.ai/field-matters/releases/demo/dia_data.csv">dia_data.csv</a> &mdash; the dataset for the Diarization track </br>
+    <a href="https://files.deeppavlov.ai/field-matters/releases/demo/sound.zip">sound.zip</a> &mdash; an archive containing the files referenced in both tracks
 </details>
 <details >
     <summary>Baseline solution</summary>
