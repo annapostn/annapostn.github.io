@@ -50,9 +50,7 @@
       details{
        display:block;
         margin-bottom: .5rem;
-      }
-      body{background: #edf2f7;}
-    
+      }    
     
           .frame{
       width: max-content;
@@ -135,8 +133,8 @@ We are particularly interested in finding the native speakers' segments. In the 
 
 <details>
     <summary>Data</summary>
-    <a href="https://files.deeppavlov.ai/field-matters/releases/demo/dia_data.csv">dia_data.csv</a> &mdash; the dataset for the Diarization track </br>
-    <a href="https://files.deeppavlov.ai/field-matters/releases/demo/sound.zip">sound.zip</a> &mdash; an archive containing the files referenced in both tracks
+    <p><a href="https://files.deeppavlov.ai/field-matters/releases/demo/dia_data.csv">dia_data.csv</a> &mdash; the dataset for the Diarization track </br> 
+    <a href="https://files.deeppavlov.ai/field-matters/releases/demo/sound.zip">sound.zip</a> &mdash; an archive containing the files referenced in both tracks </p>
 </details>
 <details >
     <summary>Baseline solution</summary>
