@@ -49,7 +49,8 @@
       }
       details{
        display:block;
-        margin-bottom: .5rem;
+       margin-bottom: .5rem;
+       border: 0; 
       }    
     
           .frame{
